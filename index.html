@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -532,22 +532,61 @@
       </section>
     </main>
 
-    <footer class="bg-navy">
-      <div class="mx-auto max-w-[1200px] px-4 py-10 text-sm text-slate-200 sm:px-6 lg:px-8">
-        <div class="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
-          <p>© 2026 Zbyněk Bureš | Všechna práva vyhrazena.</p>
-
-          <details class="max-w-xl rounded-2xl border border-white/10 bg-white/5 p-4">
-            <summary class="focus-ring cursor-pointer list-none font-medium text-white">
-              Zpracování osobních údajů
-            </summary>
-            <p id="privacy-policy" class="mt-3 leading-7 text-slate-300">
-              Osobní údaje zaslané prostřednictvím telefonu nebo e-mailové poptávky slouží
-              výhradně k vyřízení komunikace a přípravě nabídky. Web nevyužívá analytické
-              ani reklamní cookies a neposkytuje data třetím stranám mimo nezbytné
-              zpracování konkrétní poptávky.
+    <!-- ROZŠÍŘENÁ PATIČKA -->
+<footer class="bg-navy pt-16 pb-8">
+      <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 md:grid-cols-3 lg:gap-16">
+          
+          <div>
+            <a href="#top" class="focus-ring inline-flex flex-col rounded-md text-white">
+              <span class="text-lg font-extrabold uppercase tracking-[0.18em]">Zbyněk Bureš</span>
+              <span class="text-sm text-mist/80">Geodetické služby</span>
+            </a>
+            <p class="mt-4 text-sm leading-6 text-mist/70">
+              Spolehlivé geodetické služby, GIS pasporty a fotogrametrie pro soukromé i veřejné projekty v Olomouci a okolí. Důraz na přesnost a profesionální přístup.
             </p>
-          </details>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-semibold uppercase tracking-[0.16em] text-sage">Navigace</h3>
+            <ul class="mt-4 space-y-3 text-sm text-mist/80">
+              <li><a href="#o-mne" class="focus-ring rounded-md transition hover:text-white">O mně</a></li>
+              <li><a href="#sluzby" class="focus-ring rounded-md transition hover:text-white">Služby</a></li>
+              <li><a href="#kontakt" class="focus-ring rounded-md transition hover:text-white">Kontakt</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-semibold uppercase tracking-[0.16em] text-sage">Spojení</h3>
+            <ul class="mt-4 space-y-3 text-sm text-mist/80">
+              <li>IČO: 04768191</li>
+              <li>Lokalita: Olomoucký kraj</li>
+              <li>
+                <a href="tel:+420731917361" class="focus-ring rounded-md transition hover:text-white">Tel: +420 731 917 361</a>
+              </li>
+              <li>
+                <a href="mailto:bures.zbynek@email.cz" class="focus-ring rounded-md transition hover:text-white">bures.zbynek@email.cz</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-12 border-t border-white/10 pt-8">
+          <div class="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+            <p class="text-sm text-mist/60">© 2026 Zbyněk Bureš | Všechna práva vyhrazena.</p>
+
+            <details class="max-w-xl rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-mist/80">
+              <summary class="focus-ring cursor-pointer list-none font-medium text-white transition hover:text-sage">
+                Zpracování osobních údajů
+              </summary>
+              <p id="privacy-policy" class="mt-3 leading-6">
+                Osobní údaje zaslané prostřednictvím telefonu nebo e-mailové poptávky slouží
+                výhradně k vyřízení komunikace a přípravě nabídky. Web nevyužívá analytické
+                ani reklamní cookies a neposkytuje data třetím stranám mimo nezbytné
+                zpracování konkrétní poptávky.
+              </p>
+            </details>
+          </div>
         </div>
       </div>
     </footer>
