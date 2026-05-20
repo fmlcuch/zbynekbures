@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zbyněk Bureš | Geodetické služby Olomouc</title>
+    <meta
+      name="description"
+      content="Přesné geodetické služby, GIS pasportizace a fotogrametrie v Olomouci a okolí. Profesionální geodézie pro stavební a technické projekty."
+    />
+    <meta name="theme-color" content="#16324F" />
+    <link rel="canonical" href="https://zbynekbures.cz/" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zbynekbures.cz/" />
+    <meta property="og:title" content="Zbyněk Bureš | Geodetické služby Olomouc" />
+    <meta
+      property="og:description"
+      content="Přesné geodetické služby, GIS pasportizace a fotogrametrie v Olomouci a okolí."
+    />
+    <meta property="og:image" content="https://zbynekbures.cz/images/og-image.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Zbyněk Bureš | Geodetické služby Olomouc" />
+    <meta
+      name="twitter:description"
+      content="Přesné geodetické služby, GIS pasportizace a fotogrametrie v Olomouci a okolí."
+    />
+    <meta name="twitter:image" content="https://zbynekbures.cz/images/og-image.svg" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: "#16324F",
+              sage: "#5B7C63",
+              mist: "#F5F7F8",
+              slate: "#2D3748",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+            boxShadow: {
+              soft: "0 20px 60px rgba(22, 50, 79, 0.10)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      html {
+        scroll-padding-top: 5.5rem;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #2d3748;
+        background:
+          radial-gradient(circle at top left, rgba(91, 124, 99, 0.10), transparent 28%),
+          radial-gradient(circle at top right, rgba(22, 50, 79, 0.10), transparent 30%),
+          #ffffff;
+      }
+
+      .hero-pattern {
+        background-image:
+          url("data:image/svg+xml,%3Csvg width='420' height='420' viewBox='0 0 420 420' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 360C77 309 129 320 176 273C223 226 258 244 297 205C336 166 341 122 398 69' stroke='%2316324F' stroke-width='1.4' stroke-opacity='0.08' stroke-linecap='round'/%3E%3Cpath d='M-1 300C53 252 104 259 149 214C194 169 235 182 276 146C317 110 343 74 421 26' stroke='%2316324F' stroke-width='1.2' stroke-opacity='0.06' stroke-linecap='round'/%3E%3Cpath d='M48 402C114 353 173 359 222 309C271 259 314 274 360 222C386 192 400 171 419 144' stroke='%235B7C63' stroke-width='1.2' stroke-opacity='0.08' stroke-linecap='round'/%3E%3Ccircle cx='300' cy='115' r='62' stroke='%235B7C63' stroke-opacity='0.08'/%3E%3Ccircle cx='300' cy='115' r='96' stroke='%2316324F' stroke-opacity='0.05'/%3E%3Ccircle cx='112' cy='306' r='52' stroke='%2316324F' stroke-opacity='0.05'/%3E%3C/svg%3E");
+        background-position: center;
+        background-repeat: repeat;
+      }
+
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.86);
+        backdrop-filter: blur(14px);
+      }
+
+      .card-lift {
+        transition:
+          transform 180ms ease,
+          box-shadow 180ms ease,
+          border-color 180ms ease;
+      }
+
+      .card-lift:hover,
+      .card-lift:focus-within {
+        transform: scale(1.02);
+        box-shadow: 0 26px 60px rgba(22, 50, 79, 0.12);
+        border-color: rgba(91, 124, 99, 0.35);
+      }
+
+      .focus-ring:focus-visible {
+        outline: 3px solid rgba(91, 124, 99, 0.45);
+        outline-offset: 3px;
+      }
+
+      .section-shell {
+        padding-top: clamp(5rem, 9vw, 7.5rem);
+        padding-bottom: clamp(5rem, 9vw, 7.5rem);
+      }
+    </style>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Zbyněk Bureš - Geodetické služby",
+        "image": "https://zbynekbures.cz/images/og-image.svg",
+        "description": "Geodetické služby, GIS pasportizace a fotogrametrie v Olomouci a okolí.",
+        "areaServed": "Olomoucký kraj",
+        "telephone": "+420731917361",
+        "email": "bures.zbynek@email.cz",
+        "url": "https://zbynekbures.cz/",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Olomouc",
+          "addressCountry": "CZ"
+        },
+        "identifier": "IČO: 04768191"
+      }
+    </script>
+  </head>
+  <body class="antialiased selection:bg-sage/20 selection:text-navy">
+    <a
+      href="#obsah"
+      class="focus-ring sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[70] focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-navy"
+      >Přeskočit na obsah</a
+    >
+
+    <header id="top" class="fixed inset-x-0 top-0 z-50">
+      <nav
+        id="site-nav"
+        class="glass-nav border-b border-transparent transition-shadow duration-200"
+        aria-label="Hlavní navigace"
+      >
+        <div class="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-4 sm:px-6 lg:px-8">
+          <a href="#top" class="focus-ring flex min-w-0 flex-col rounded-md">
+            <span class="truncate text-sm font-extrabold uppercase tracking-[0.18em] text-navy"
+              >Zbyněk Bureš</span
+            >
+            <span class="truncate text-xs text-slate/75">Geodetické služby</span>
+          </a>
+
+          <div class="hidden items-center gap-8 md:flex">
+            <a href="#o-mne" class="focus-ring rounded-md text-sm font-medium text-slate transition hover:text-navy"
+              >O mně</a
+            >
+            <a href="#sluzby" class="focus-ring rounded-md text-sm font-medium text-slate transition hover:text-navy"
+              >Služby</a
+            >
+            <a href="#kontakt" class="focus-ring rounded-md text-sm font-medium text-slate transition hover:text-navy"
+              >Kontakt</a
+            >
+            <a
+              href="#kontakt"
+              class="focus-ring inline-flex items-center justify-center rounded-full bg-sage px-4 py-2 text-sm font-semibold text-white shadow-md transition hover:bg-[#4D6B55]"
+              >Kontaktovat</a
+            >
+          </div>
+
+          <button
+            id="menu-toggle"
+            type="button"
+            class="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-navy md:hidden"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Otevřít menu"
+          >
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 7H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              <path d="M4 12H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              <path d="M4 17H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+
+        <div
+          id="mobile-menu"
+          class="hidden border-t border-slate-200/80 bg-white/95 px-4 py-4 shadow-lg md:hidden"
+        >
+          <div class="mx-auto flex max-w-[1200px] flex-col gap-2">
+            <a href="#o-mne" class="focus-ring rounded-2xl px-4 py-3 font-medium text-slate hover:bg-mist"
+              >O mně</a
+            >
+            <a href="#sluzby" class="focus-ring rounded-2xl px-4 py-3 font-medium text-slate hover:bg-mist"
+              >Služby</a
+            >
+            <a href="#kontakt" class="focus-ring rounded-2xl px-4 py-3 font-medium text-slate hover:bg-mist"
+              >Kontakt</a
+            >
+            <a
+              href="#kontakt"
+              class="focus-ring mt-2 inline-flex items-center justify-center rounded-full bg-sage px-4 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-[#4D6B55]"
+              >Kontaktovat</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="obsah">
+      <section class="hero-pattern overflow-hidden pt-28">
+        <div
+          class="mx-auto grid max-w-[1200px] items-center gap-14 px-4 pb-16 pt-8 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-8 lg:pb-24"
+        >
+          <div class="relative z-10">
+            <span
+              class="inline-flex items-center gap-2 rounded-full border border-navy/10 bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-navy shadow-sm"
+            >
+              Olomouc a okolí
+            </span>
+            <h1 class="mt-6 max-w-3xl text-4xl font-extrabold leading-tight text-navy sm:text-5xl">
+              Přesné geodetické služby pro vaše projekty v Olomouci a okolí
+            </h1>
+            <p class="mt-6 max-w-2xl text-lg leading-8 text-slate/85 sm:text-xl">
+              Geodetické zaměření, GIS pasporty a moderní fotogrametrie s důrazem na
+              přesnost a spolehlivost.
+            </p>
+
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="#kontakt"
+                class="focus-ring inline-flex items-center justify-center rounded-full bg-sage px-6 py-4 text-base font-semibold text-white shadow-md transition hover:bg-[#4D6B55]"
+                >Kontaktovat</a
+              >
+              <a
+                href="tel:+420731917361"
+                class="focus-ring inline-flex items-center justify-center rounded-full border border-navy/12 bg-white px-6 py-4 text-base font-semibold text-navy transition hover:border-sage/40 hover:text-sage"
+                >Zavolat: +420 731 917 361</a
+              >
+            </div>
+
+            <div class="mt-10 grid gap-3 sm:grid-cols-3">
+              <div class="rounded-2xl border border-white/70 bg-white/80 p-4 shadow-sm">
+                <p class="text-sm font-semibold text-navy">Praxe od roku 2016</p>
+                <p class="mt-1 text-sm text-slate/70">Zkušenost v terénu i nad daty.</p>
+              </div>
+              <div class="rounded-2xl border border-white/70 bg-white/80 p-4 shadow-sm">
+                <p class="text-sm font-semibold text-navy">Technická přesnost</p>
+                <p class="mt-1 text-sm text-slate/70">Podklady pro stavby, obce i správce sítí.</p>
+              </div>
+              <div class="rounded-2xl border border-white/70 bg-white/80 p-4 shadow-sm">
+                <p class="text-sm font-semibold text-navy">Lokální dostupnost</p>
+                <p class="mt-1 text-sm text-slate/70">Olomoucký kraj a široké okolí.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -left-6 -top-6 h-32 w-32 rounded-full bg-sage/10 blur-2xl"></div>
+            <div class="absolute -bottom-10 right-0 h-36 w-36 rounded-full bg-navy/10 blur-3xl"></div>
+            <div class="relative overflow-hidden rounded-[28px] border border-white/70 bg-white p-3 shadow-soft">
+              <img
+                src="images/hero-visual.svg"
+                alt="Technická ilustrace geodetických služeb a měření v terénu"
+                class="h-full w-full rounded-[22px] object-cover"
+                width="960"
+                height="760"
+                fetchpriority="high"
+              />
+              <div
+                class="absolute bottom-8 left-8 max-w-xs rounded-2xl border border-white/60 bg-white/92 p-4 shadow-lg"
+              >
+                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-sage">
+                  Geodetické služby
+                </p>
+                <p class="mt-2 text-lg font-semibold text-navy">
+                  Přesné výstupy pro projekty, majetek i terénní sběr dat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="o-mne" class="section-shell">
+        <div
+          class="mx-auto grid max-w-[1200px] items-center gap-12 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16 lg:px-8"
+        >
+          <div class="order-2 lg:order-1">
+            <div class="relative overflow-hidden rounded-[28px] border border-navy/8 bg-mist p-3 shadow-soft">
+              <img
+                src="images/about-visual.svg"
+                alt="Zbyněk Bureš při geodetické práci v terénu - ilustrační technická vizualizace"
+                class="h-full w-full rounded-[22px] object-cover"
+                width="960"
+                height="760"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+
+          <div class="order-1 lg:order-2">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-sage">O mně</p>
+            <h2 class="mt-4 text-3xl font-extrabold text-navy sm:text-4xl">
+              Technický přístup, osobní odpovědnost a srozumitelná spolupráce
+            </h2>
+            <p class="mt-6 text-lg leading-8 text-slate/85">
+              Od roku 2016 působím v oblasti geodetických služeb v Olomouckém kraji a
+              okolí. Zaměřuji se na přesné měření, geodetické podklady, GIS pasportizaci
+              a moderní metody sběru dat pomocí fotogrametrie. Zakládám si na technické
+              přesnosti, spolehlivosti a individuálním přístupu ke každému projektu.
+              Spolupracuji se soukromými investory, projektanty i obcemi a kladu důraz na
+              kvalitní výstupy a efektivní řešení.
+            </p>
+
+            <div class="mt-8 inline-flex rounded-2xl border border-sage/15 bg-sage/8 p-5">
+              <div>
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-sage">
+                  Důvěryhodnost
+                </p>
+                <p class="mt-2 text-2xl font-bold text-navy">Praxe od roku 2016</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sluzby" class="section-shell bg-mist">
+        <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-sage">Služby</p>
+            <h2 class="mt-4 text-3xl font-extrabold text-navy sm:text-4xl">Moje služby</h2>
+            <p class="mt-6 text-lg leading-8 text-slate/80">
+              Nabízím odborné geodetické služby pro soukromé investory, projektanty,
+              stavební firmy, obce i správce infrastruktury.
+            </p>
+          </div>
+
+          <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            <article
+              class="card-lift rounded-[24px] border border-transparent bg-white p-8 shadow-md"
+            >
+              <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-navy/8 text-navy">
+                <svg viewBox="0 0 24 24" class="h-7 w-7" fill="none" aria-hidden="true">
+                  <path
+                    d="M12 4L6 10H18L12 4Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8 10L5 20M16 10L19 20M9.5 15H14.5"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-6 text-2xl font-bold text-navy">Geodetické zaměření</h3>
+              <p class="mt-4 text-base leading-7 text-slate/80">
+                Inženýrská a katastrální geodézie pro stavební a technické projekty.
+              </p>
+              <ul class="mt-6 space-y-3 text-sm text-slate/80">
+                <li class="flex items-start gap-3">
+                  <span class="mt-1.5 h-2 w-2 rounded-full bg-sage"></span>
+                  <span>Geometrické plány</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1.5 h-2 w-2 rounded-full bg-sage"></span>
+                  <span>Vytyčení hranic pozemků</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1.5 h-2 w-2 rounded-full bg-sage"></span>
+                  <span>Zaměření inženýrských sítí</span>
+                </li>
+              </ul>
+            </article>
+
+            <article
+              class="card-lift rounded-[24px] border border-transparent bg-white p-8 shadow-md"
+            >
+              <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-sage/12 text-sage">
+                <svg viewBox="0 0 24 24" class="h-7 w-7" fill="none" aria-hidden="true">
+                  <path
+                    d="M4 6L9 4L15 6L20 4V18L15 20L9 18L4 20V6Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9 4V18M15 6V20"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-6 text-2xl font-bold text-navy">GIS a pasportizace</h3>
+              <p class="mt-4 text-base leading-7 text-slate/80">
+                Tvorba pasportů a datových podkladů pro geoinformační systémy.
+              </p>
+              <ul class="mt-6 space-y-3 text-sm text-slate/80">
+                <li class="flex items-start gap-3">
+                  <span class="mt-1.5 h-2 w-2 rounded-full bg-sage"></span>
+                  <span>Sběr dat v terénu</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1.5 h-2 w-2 rounded-full bg-sage"></span>
+                  <span>Digitalizace map</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1.5 h-2 w-2 rounded-full bg-sage"></span>
+                  <span>Pasportizace obecního majetku</span>
+                </li>
+              </ul>
+            </article>
+
+            <article
+              class="card-lift rounded-[24px] border border-transparent bg-white p-8 shadow-md md:col-span-2 xl:col-span-1"
+            >
+              <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-navy/8 text-navy">
+                <svg viewBox="0 0 24 24" class="h-7 w-7" fill="none" aria-hidden="true">
+                  <path
+                    d="M7 9L12 6L17 9M12 6V12M6 15L12 18L18 15"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6 9V15L12 18V12L6 9ZM18 9V15L12 18"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-6 text-2xl font-bold text-navy">Fotogrametrie a 3D modely</h3>
+              <p class="mt-4 text-base leading-7 text-slate/80">
+                Moderní sběr dat pomocí dronů a digitální fotogrametrie.
+              </p>
+              <ul class="mt-6 space-y-3 text-sm text-slate/80">
+                <li class="flex items-start gap-3">
+                  <span class="mt-1.5 h-2 w-2 rounded-full bg-sage"></span>
+                  <span>3D modely terénu a budov</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1.5 h-2 w-2 rounded-full bg-sage"></span>
+                  <span>Ortofotomapy</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1.5 h-2 w-2 rounded-full bg-sage"></span>
+                  <span>Mračna bodů</span>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontakt" class="section-shell">
+        <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-sage">Kontakt</p>
+            <h2 class="mt-4 text-3xl font-extrabold text-navy sm:text-4xl">Kontaktujte mě</h2>
+            <p class="mt-6 text-lg leading-8 text-slate/80">
+              Hledáte spolehlivého geodeta pro projekt, pasportizaci nebo sběr dat v
+              terénu? Ozvěte se, rád připravím vhodné řešení.
+            </p>
+          </div>
+
+          <div class="mx-auto mt-12 max-w-4xl rounded-[30px] border border-navy/8 bg-white p-8 shadow-soft sm:p-10">
+            <div class="grid gap-6 md:grid-cols-2">
+              <div class="rounded-[24px] bg-mist p-6 text-left">
+                <p class="text-sm font-semibold uppercase tracking-[0.16em] text-sage">
+                  Lokalita působnosti
+                </p>
+                <p class="mt-3 text-2xl font-bold text-navy">Olomouc a široké okolí</p>
+                <p class="mt-3 text-base leading-7 text-slate/75">
+                  Geodetické služby pro soukromé osoby, projektanty, stavební firmy, obce
+                  i správce infrastruktury.
+                </p>
+              </div>
+
+              <div class="space-y-4 text-left">
+                <div class="rounded-[22px] border border-slate-200 p-5">
+                  <p class="text-sm font-semibold uppercase tracking-[0.16em] text-sage">
+                    Telefon
+                  </p>
+                  <a
+                    href="tel:+420731917361"
+                    class="focus-ring mt-2 inline-block text-2xl font-bold text-navy transition hover:text-sage"
+                    >+420 731 917 361</a
+                  >
+                </div>
+
+                <div class="rounded-[22px] border border-slate-200 p-5">
+                  <p class="text-sm font-semibold uppercase tracking-[0.16em] text-sage">
+                    E-mail
+                  </p>
+                  <a
+                    href="mailto:bures.zbynek@email.cz"
+                    class="focus-ring mt-2 inline-block break-all text-xl font-semibold text-navy transition hover:text-sage"
+                    >bures.zbynek@email.cz</a
+                  >
+                </div>
+
+                <div class="rounded-[22px] border border-slate-200 p-5">
+                  <p class="text-sm font-semibold uppercase tracking-[0.16em] text-sage">IČO</p>
+                  <p class="mt-2 text-xl font-semibold text-navy">04768191</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
+              <a
+                href="tel:+420731917361"
+                class="focus-ring inline-flex items-center justify-center rounded-full bg-sage px-7 py-4 text-base font-semibold text-white shadow-md transition hover:bg-[#4D6B55]"
+                >Zavolat</a
+              >
+              <a
+                href="mailto:bures.zbynek@email.cz"
+                class="focus-ring inline-flex items-center justify-center rounded-full border border-navy/12 bg-white px-7 py-4 text-base font-semibold text-navy transition hover:border-sage/40 hover:text-sage"
+                >Napsat e-mail</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-navy">
+      <div class="mx-auto max-w-[1200px] px-4 py-10 text-sm text-slate-200 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+          <p>© 2026 Zbyněk Bureš | Všechna práva vyhrazena.</p>
+
+          <details class="max-w-xl rounded-2xl border border-white/10 bg-white/5 p-4">
+            <summary class="focus-ring cursor-pointer list-none font-medium text-white">
+              Zpracování osobních údajů
+            </summary>
+            <p id="privacy-policy" class="mt-3 leading-7 text-slate-300">
+              Osobní údaje zaslané prostřednictvím telefonu nebo e-mailové poptávky slouží
+              výhradně k vyřízení komunikace a přípravě nabídky. Web nevyužívá analytické
+              ani reklamní cookies a neposkytuje data třetím stranám mimo nezbytné
+              zpracování konkrétní poptávky.
+            </p>
+          </details>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const siteNav = document.getElementById("site-nav");
+      const mobileLinks = mobileMenu.querySelectorAll("a");
+
+      const closeMenu = () => {
+        mobileMenu.classList.add("hidden");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Otevřít menu");
+      };
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+        if (isOpen) {
+          closeMenu();
+          return;
+        }
+
+        mobileMenu.classList.remove("hidden");
+        menuToggle.setAttribute("aria-expanded", "true");
+        menuToggle.setAttribute("aria-label", "Zavřít menu");
+      });
+
+      mobileLinks.forEach((link) => link.addEventListener("click", closeMenu));
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth >= 768) {
+          closeMenu();
+        }
+      });
+
+      const handleNavShadow = () => {
+        if (window.scrollY > 12) {
+          siteNav.classList.add("shadow-sm");
+        } else {
+          siteNav.classList.remove("shadow-sm");
+        }
+      };
+
+      handleNavShadow();
+      window.addEventListener("scroll", handleNavShadow, { passive: true });
+    </script>
+  </body>
+</html>
