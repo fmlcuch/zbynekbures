@@ -138,76 +138,100 @@
       >Přeskočit na obsah</a
     >
 
-    <header class="fixed inset-x-0 top-0 z-50">
-      <nav
-        id="site-nav"
-        class="glass-nav border-b border-transparent transition-shadow duration-200"
-        aria-label="Hlavní navigace"
-      >
-        <div class="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-4 sm:px-6 lg:px-8">
-          <a href="#top" class="focus-ring flex min-w-0 flex-col rounded-md">
-            <span class="truncate text-sm font-extrabold uppercase tracking-[0.18em] text-navy"
-              >Zbyněk Bureš</span
-            >
-            <span class="truncate text-xs text-slate/75">Geodetické služby</span>
-          </a>
+<header class="fixed inset-x-0 top-0 z-50">
+  <nav
+    id="site-nav"
+    class="glass-nav border-b border-transparent transition-shadow duration-200"
+    aria-label="Hlavní navigace"
+  >
+    <div class="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-4 sm:px-6 lg:px-8">
+      <!-- Logo / Značka -->
+      <a href="#top" class="focus-ring flex min-w-0 flex-col rounded-md">
+        <span class="truncate text-sm font-extrabold uppercase tracking-[0.18em] text-navy">
+          Zbyněk Bureš
+        </span>
+        <span class="truncate text-xs text-slate/75">Geodetické služby</span>
+      </a>
 
-          <div class="hidden items-center gap-8 md:flex">
-            <a href="#o-mne" class="focus-ring rounded-md text-sm font-medium text-slate transition hover:text-navy"
-              >O mně</a
-            >
-            <a href="#sluzby" class="focus-ring rounded-md text-sm font-medium text-slate transition hover:text-navy"
-              >Služby</a
-            >
-            <a href="#kontakt" class="focus-ring rounded-md text-sm font-medium text-slate transition hover:text-navy"
-              >Kontakt</a
-            >
-            <a
-              href="#kontakt"
-              class="focus-ring inline-flex items-center justify-center rounded-full bg-sage px-4 py-2 text-sm font-semibold text-white shadow-md transition hover:bg-[#4D6B55]"
-              >Kontaktovat</a
-            >
-          </div>
+      <!-- Desktop navigace -->
+      <div class="hidden items-center gap-6 lg:gap-8 md:flex">
+        <a href="#o-mne" class="focus-ring rounded-md text-sm font-medium text-slate transition hover:text-navy">
+          O mně
+        </a>
+        <a href="#sluzby" class="focus-ring rounded-md text-sm font-medium text-slate transition hover:text-navy">
+          Služby
+        </a>
+        <a href="#kontakt" class="focus-ring rounded-md text-sm font-medium text-slate transition hover:text-navy">
+          Kontakt
+        </a>
+        
+        <!-- Přidaný telefon (Desktop) -->
+        <a href="tel:+420731917361" class="focus-ring flex items-center gap-1.5 rounded-md text-sm font-bold text-navy transition hover:text-sage">
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.893-1.438-5.219-3.764-6.657-6.657l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+          </svg>
+          +420 731 917 361
+        </a>
 
-          <button
-            id="menu-toggle"
-            type="button"
-            class="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-navy md:hidden"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-            aria-label="Otevřít menu"
-          >
-            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M4 7H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-              <path d="M4 12H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-              <path d="M4 17H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-            </svg>
-          </button>
-        </div>
-
-        <div
-          id="mobile-menu"
-          class="hidden border-t border-slate-200/80 bg-white/95 px-4 py-4 shadow-lg md:hidden"
+        <a
+          href="#kontakt"
+          class="focus-ring inline-flex items-center justify-center rounded-full bg-sage px-4 py-2 text-sm font-semibold text-white shadow-md transition hover:bg-[#4D6B55]"
         >
-          <div class="mx-auto flex max-w-[1200px] flex-col gap-2">
-            <a href="#o-mne" class="focus-ring rounded-2xl px-4 py-3 font-medium text-slate hover:bg-mist"
-              >O mně</a
-            >
-            <a href="#sluzby" class="focus-ring rounded-2xl px-4 py-3 font-medium text-slate hover:bg-mist"
-              >Služby</a
-            >
-            <a href="#kontakt" class="focus-ring rounded-2xl px-4 py-3 font-medium text-slate hover:bg-mist"
-              >Kontakt</a
-            >
-            <a
-              href="#kontakt"
-              class="focus-ring mt-2 inline-flex items-center justify-center rounded-full bg-sage px-4 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-[#4D6B55]"
-              >Kontaktovat</a
-            >
-          </div>
-        </div>
-      </nav>
-    </header>
+          Kontaktovat
+        </a>
+      </div>
+
+      <!-- Hamburger menu (Mobil) -->
+      <button
+        id="menu-toggle"
+        type="button"
+        class="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-navy md:hidden"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Otevřít menu"
+      >
+        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 7H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          <path d="M4 12H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          <path d="M4 17H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobilní menu (Rozbalovací) -->
+    <div
+      id="mobile-menu"
+      class="hidden border-t border-slate-200/80 bg-white/95 px-4 py-4 shadow-lg md:hidden"
+    >
+      <div class="mx-auto flex max-w-[1200px] flex-col gap-2">
+        <a href="#o-mne" class="focus-ring rounded-2xl px-4 py-3 font-medium text-slate hover:bg-mist">
+          O mně
+        </a>
+        <a href="#sluzby" class="focus-ring rounded-2xl px-4 py-3 font-medium text-slate hover:bg-mist">
+          Služby
+        </a>
+        <a href="#kontakt" class="focus-ring rounded-2xl px-4 py-3 font-medium text-slate hover:bg-mist">
+          Kontakt
+        </a>
+        
+        <!-- Přidaný telefon (Mobil) -->
+        <a href="tel:+420731917361" class="focus-ring flex items-center gap-3 rounded-2xl px-4 py-3 font-bold text-navy hover:bg-mist">
+          <svg class="h-5 w-5 text-sage" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.893-1.438-5.219-3.764-6.657-6.657l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+          </svg>
+          +420 731 917 361
+        </a>
+
+        <a
+          href="mailto:bures.zbynek@email.cz"
+          class="focus-ring mt-2 inline-flex items-center justify-center rounded-full bg-sage px-4 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-[#4D6B55]"
+        >
+          E-mail
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
 
 <main id="obsah">
   <section class="hero-pattern overflow-hidden pt-28" id="top">
